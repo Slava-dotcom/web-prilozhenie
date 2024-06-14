@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Задачи менеджера</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Задачи менеджера</h1>
+        <div class="task-form">
+            <input type="text" id="task-input" placeholder="Ввести новую задачу" class="task-input">
+            <select id="priority-select" class="priority-select">
+                <option value="low">Низкий приоритет</option>
+                <option value="medium">Средний приоритет</option>
+                <option value="high">Высокий приоритет</option>
+            </select>
+            <button id="add-task-btn" class="add-task-btn">Добавить</button>
+        </div>
+        <div class="task-controls">
+            <input type="text" id="search-input" placeholder="Поиск задач" class="search-input">
+            <input type="date" id="filter-date-input" class="filter-date-input">
+            <button id="filter-tasks-btn" class="control-btn">Фильтр по дате</button>
+            <button id="filter-priority-btn" class="control-btn">Фильтр по приоритету</button>
+            <button id="filter-status-btn" class="control-btn">Фильтр по статусу</button>
+            <button id="sort-tasks-btn" class="control-btn">Сортировать</button>
+            <button id="show-all-tasks-btn" class="control-btn" style="display: none;">Показать все</button>
+        </div>
+        <ul id="task-list" class="task-list"></ul>
+        <button id="clear-all-btn" class="clear-all-btn">Удалить все задачи</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
